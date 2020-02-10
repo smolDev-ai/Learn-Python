@@ -1,39 +1,23 @@
 # Current BigO == O(n)
 
 x = input("Enter a number: ")
-"""
-# Current Solution
-# Issues:
-# 21 is returned as Prime.
 
-if int(x) == 2:
-    print("Prime")
+# Final Solution
 
-if int(x) > 1:
-    for i in range(2, int(x)//2):
-        if (int(x) % i) == 0:
-            print("Not Prime!")
+num = int(x)
+
+# If given number is greater than 1
+if num > 1:
+    # Iterate from 2 to n / 2
+    for i in range(2, num//2):
+        # If num is divisible by any number between
+        # 2 and n / 2, it is not prime
+        if (num % i) == 0:
+            print(num, "is not a prime number")
             break
         else:
-            print("Prime!")
+            print(num, "is a prime number")
             break
+
 else:
-    print("Prime!")
-"""
-
-# Initial solution
-# Issues:
-# 21 is returned as Prime
-
-if int(x) <= 1:
-    print("Prime")
-
-
-if (int(x) % int(x) == 0 and int(x) % 1 == 0):
-    for i in range(2, int(x)//2):
-        if(int(x) % i == 0):
-            print("Not Prime")
-        else:
-            print("Prime")
-    else:
-        print("Prime!")
+    print(num, "is not a prime number")
