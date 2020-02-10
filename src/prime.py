@@ -56,4 +56,4 @@ def sieve(num):
             print(f'Primes related to {num}: {p} \n')
 
 
-print(sieve(233))
+print(sieve(1333))
