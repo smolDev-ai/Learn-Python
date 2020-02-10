@@ -2,17 +2,13 @@
 
 x = input("Enter a number: ")
 
-# Final Solution
+# Actual Final Solution.
 
-num = int(x)
+def prime(n):
+    for m in range(2, int(n**0.5)+1):
+        if not n % m:
+            return "Not Prime!"
+    return "Prime!"
 
-# If given number is greater than 1
-if num > 1:
-    # Iterate from 2 to n / 2
-    for i in range(2, num // 2):
-        # If num is divisible by any number between
-        # 2 and n / 2, it is not prime
-        if i % num == 0:
-            print(num, "is not a prime number")
-            break
-    print(num, "is not a prime number")
+
+print(prime(int(x)))
