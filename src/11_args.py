@@ -22,6 +22,7 @@ def f2(*args):
         sum += i
     return sum
 
+
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
 print(f2(1, 4, -12))            # Should print -7
@@ -32,7 +33,8 @@ a = [7, 6, 5, 4]
 # How do you have to modify the f2 call below to make this work?
 print(f2(*a))    # Should print 22
 
-# Write a function f3 that accepts either one or two arguments. If one argument,
+# Write a function f3 that accepts either one or two arguments. If one
+# argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
 # arguments.
 # Note: Google "python default arguments" for a hint.
@@ -62,6 +64,8 @@ def f4(**kwargs):
 # Should print
 # key: a, value: 12
 # key: b, value: 30
+
+
 f4(a=12, b=30)
 
 # Should print
