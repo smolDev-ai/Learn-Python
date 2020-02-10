@@ -33,6 +33,8 @@ a = [7, 6, 5, 4]
 # How do you have to modify the f2 call below to make this work?
 print(f2(*a))    # Should print 22
 
+# the * symbol in python in relation to arguments acts similarly to the spread operator in JavaScript.
+
 # Write a function f3 that accepts either one or two arguments. If one
 # argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -55,6 +57,9 @@ print(f3(8))     # Should print 9
 # key: baz, value: 12
 #
 # Note: Google "python keyword arguments".
+
+# kwargs stands for keyword arguments. The ** symbol also acts similarly to the spread, but
+# because kwargs is a dictionary it spreads a key/value separately.
 
 
 def f4(**kwargs):
